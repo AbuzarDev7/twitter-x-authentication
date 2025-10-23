@@ -1,0 +1,21 @@
+body{
+    background-image: url(/vecteezy_madrid-spain-august-2023-new-social-media-logo-twitter_28148799.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1{
+    text-align: center;
+    color: #ebe9e9;
+    font-family: 'Times New Roman', Times, serif;
+}
+#x{
+    color: #000000;
+}
+#twi{
+    color: rgb(16, 121, 121);
+}

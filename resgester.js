@@ -16,6 +16,13 @@ window.location = "login.html"
   .catch((error) => {
     // const errorCode = error.code;
     const errorMessage = error.message;
-console.log(errorMessage);
+console.log(errorMessage); 
+Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "already acount regestered!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
+
   });
 })

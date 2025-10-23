@@ -4,21 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twittwer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> login Twittwer</h1>
-    <form id="form">
-        <input type="text" placeholder="Enter your email" id="inpEmail">
-        <br>
-        <br>
-        <input type="password" placeholder="Enter your password" id="inpPassword">
-        <br>
-        <br>
-        <button type="submit">Login</button>
+
+  <div class="card" role="main" aria-labelledby="loginTitle">
+    <div class="brand">
+      <div class="logo">X</div>
+      <div>
+        <h1 id="loginTitle">Login — Twittwer</h1>
+        <p class="sub">Sign in to continue to your account</p>
+      </div>
+    </div>
+
+    <form id="form" novalidate>
+      <div>
+        <label for="inpEmail">Email</label>
+        <input id="inpEmail" type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div>
+        <label for="inpPassword">Password</label>
+        <input id="inpPassword" type="password" placeholder="Enter your password" required />
+      </div>
+
+      <button class="btn" type="submit">Login</button>
+
+      <!-- Message area (JS will fill) -->
+      <div id="message" style="margin-top:8px"></div>
+
+      <div class="foot" style="margin-top:8px">
+        <div style="font-size:13px;color:#9fb7d9">Don't have an account?</div>
+        <a href="/regester.html">Sign up</a>
+      </div>
     </form>
-    <br>
-    <br>
-    <a href="/regester.html">Sign up</a>
-    <script type="module" src="app.js"></script>
+    <button class="btnFor" type="submit">Forgot Password</button>
+  </div>
+
+  
+    <script type="module" src="login.js"></script>
 </body>
 </html> 
