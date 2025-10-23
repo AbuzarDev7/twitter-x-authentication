@@ -1,7 +1,7 @@
 
   
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
- import { getAuth } from "//www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+ import {getAuth} from "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js";
 
   
   const firebaseConfig = {
@@ -15,6 +15,6 @@
   };
 
  
-   export const app = initializeApp(firebaseConfig);
+   const app = initializeApp(firebaseConfig);
    export const auth = getAuth(app)
 
