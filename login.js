@@ -26,6 +26,11 @@ btnForget.addEventListener("click" ,()=>{
 sendPasswordResetEmail(auth, prompt("Enter your Email"))
   .then(() => {
     console.log("send email succesfully");
+    Swal.fire({
+  title: "Succesfull!",
+  text: "send email succesfully",
+  icon: "success"
+});
   })
   .catch((error) => {
     const errorCode = error.code;
